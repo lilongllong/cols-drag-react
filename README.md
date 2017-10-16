@@ -11,3 +11,8 @@
 之后使用mousedown, mouseup, mouseup,mousemove来做模拟拖拽
 - 使用效果完美
 - 缺陷：拖动时相应区域需要自己在拖动时加一层透明面板，响应mousemove, 同时全局监控mouseup,结束拖拽。
+
+## 效果图
+![empt]('https://github.com/lilongllong/cols-drag-react/blob/master/build/%E5%AF%B9%E6%AF%94%E6%95%88%E6%9E%9C.png?raw=true')
+
+![empt]('https://github.com/lilongllong/cols-drag-react/blob/master/build/%E6%9C%80%E7%BB%88%E6%95%88%E6%9E%9C.png?raw=true')
