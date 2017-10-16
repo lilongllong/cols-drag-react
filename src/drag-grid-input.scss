@@ -1,0 +1,141 @@
+.drag-grid-input {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    border: 1px solid #3a3838;
+    padding: 1px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: gray;
+
+    .cursor-resize {
+        border: 1px solid red;
+        cursor: col-resize;
+        &:hover {
+            cursor: col-resize;
+        }
+    }
+
+
+    > .guide-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        transform: scaleY(1.2);
+
+        > .guide-col {
+            flex: 1 1 0;
+            margin-right: 10px;
+            border-radius: 2px;
+            background-color: rgba(52, 144, 235, 0.5);
+
+            &.last {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .cols-drag-item {
+        flex: 1 1 0;
+        position: relative;
+        margin-right: 10px;
+        &.last {
+            margin-right: 0;
+        }
+
+        > .gutter {
+            width: 8px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: -9px;
+            > .handle {
+                height: 100%;
+                width: 100%;
+                padding: 1px 2px;
+                &.hover {
+                    transform: scaleY(1.1);
+                    border: 1px dashed white;
+                }
+                &:hover {
+                    transform: scaleY(1.1);
+                }
+
+                > .arrows {
+                    cursor: col-resize;
+                    background: #1b70e1;
+                    height: 100%;
+                    width: 100%;
+                    box-shadow: 0 0 2px 2px white;
+                    &:hover {
+                        cursor: col-resize;
+                    }
+                }
+            }
+        }
+
+        > .label {
+            text-align: center;
+            margin-right: 8px;
+        }
+    }
+
+    > .background-label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: gray;
+
+        > .background-label__item {
+            text-align: center;
+            color: white;
+            &.width-1 {
+                flex: 1 1 0;
+            }
+            &.width-2 {
+                flex: 2 2 0;
+            }
+            &.width-3 {
+                flex: 3 3 0;
+            }
+            &.width-4 {
+                flex: 4 4 0;
+            }
+            &.width-5 {
+                flex: 5 5 0;
+            }
+            &.width-6 {
+                flex: 6 6 0;
+            }
+            &.width-7 {
+                flex: 7 7 0;
+            }
+            &.width-8 {
+                flex: 8 8 0;
+            }
+            &.width-9 {
+                flex: 9 9 0;
+            }
+            &.width-10 {
+                flex: 10 10 0;
+            }
+            &.width-11 {
+                flex: 11 11 0;
+            }
+            &.width-12 {
+                flex: 12 12 0;
+            }
+        }
+    }
+}

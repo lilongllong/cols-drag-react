@@ -1,0 +1,31 @@
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cols-input-app {
+    width: 600px;
+    height: 400px;
+
+    > .app-header {
+        height: 30px;
+    }
+    > .app-body {
+        height: 370px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        > .app-body-left {
+            flex: 1 1 0;
+            height: 100%;
+            margin-right: 5px;
+        }
+        > .app-body-right {
+            flex: 1 1 0;
+            height: 100%;
+            margin-left: 5px;
+        }
+    }
+}
